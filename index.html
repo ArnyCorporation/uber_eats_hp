@@ -4,10 +4,216 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
+
+    <header class="header">
+      <div class="wrapper wrapper-header-items">
+        <a href="#">
+          <img class="header__logo" src="images/logo.png" alt="uber logo">
+        </a>
+        <div class="header-wrapp-input large-size-inputs">
+          <input class="header__input header__input--when" type="text" name="when" placeholder="ASAP">
+          <span class="header__span">to</span>
+          <input class="header__input header__input--to" type="text" name="to" placeholder="ul. Bolshaya Dmitrov">
+        </div>
+        <div class="header-wrapp-buttons">
+          <button class="header__button header__button--signin" type="button" name="button">
+            <a class="signin-link" href="#">Sign in</a>
+          </button>
+          <button class="header__button header__button--register" type="button" name="button">
+            <a class="register-link" href="#">Register</a>
+          </button>
+          <a class="header__imgbasket" href="#">
+            <img src="images/basket.png" alt="basket image">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper wrapper-main-items">
+        <input class="main__search" type="search" name="searchproducts" placeholder="Search for restaurant or cuisine">
+
+        <div class="header-wrapp-input phone-size-inputs">
+          <input class="header__input header__input--when" type="text" name="when" placeholder="ASAP">
+          <span class="header__span">to</span>
+          <input class="header__input header__input--to" type="text" name="to" placeholder="ul. Bolshaya Dmitrov">
+        </div>
+
+        <p class="main__name">Moscow Restaurants</p>
+
+        <div class="wrapper-cards">
+          <div class="card">
+            <img class="card__img" src="images/burgermac.png" alt="">
+            <p class="card__name">
+              Макдоналдс
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Бургеры</span>
+            </div>
+            <p class="card__details">25 - 35 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/wokwei.png" alt="wokwei image">
+            <p class="card__name">
+              WOKWEI
+            </p>
+            <div class="card__price-and-sort">
+              <span>$ &#8226;</span>
+              <span>Японская &#8226; Азиатская</span>
+            </div>
+            <p class="card__details">25 - 35 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/yizha.png" alt="yizha image">
+            <p class="card__name">
+              YIZHA
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Американская &#8226; Бургеры</span>
+            </div>
+            <p class="card__details">35 - 40 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/musafir.png" alt="musafir image">
+            <p class="card__name">
+              Musafir
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Юговосток</span>
+            </div>
+            <p class="card__details">15 - 25 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/wokwei2.png" alt="wokwei image">
+            <p class="card__name">
+              WOKWEI
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Китайская &#8226; Азиатская</span>
+            </div>
+            <p class="card__details">60 - 105 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/milk-bar.png" alt="milk-bar image">
+            <p class="card__name">
+              Макдоналдс
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Milk-Bar</span>
+            </div>
+            <p class="card__details">5 - 15 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/mimosa-pizza.png" alt="mimosa-pizza image">
+            <p class="card__name">
+              Mimosa-Pizza
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Итальянское &#8226; Американское</span>
+            </div>
+            <p class="card__details">45 - 55 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/tobe.png" alt="tobe image">
+            <p class="card__name">
+              To Be
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Японсоке &#8226; Суши</span>
+            </div>
+            <p class="card__details">15 - 30 Min</p>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="images/duzzi.png" alt="duzzi image">
+            <p class="card__name">
+              Duzzi Cafe
+            </p>
+            <div class="card__price-and-sort">
+              <span>$$ &#8226;</span>
+              <span>Американская &#8226; Европейская</span>
+            </div>
+            <p class="card__details">30 - 40 Min</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper wrapper-footer">
+        <section class="footer__section-logo section-logo">
+          <a href="#">
+            <img class="footer__logo" src="images/footer-logo.png" alt="uber eats logo">
+          </a>
+        </section>
+
+        <section class="footer__section-main section-main">
+          <div class="wrapper-footer-main">
+            <div class="left-block">
+              <select class="footer__select-language">
+                <option>English</option>
+                <option>Russian</option>
+                <option>Ukrain</option>
+              </select>
+              <p class="footer__title">
+                <span class="hashtag">#</span>UberEats</p>
+              <div class="footer__socials-links">
+                <a href="#"><img class="soc-link" src="images/fbb-icon.png" alt="fbb icon"></a>
+                <a href="#"><img class="soc-link" src="images/twiter-icon.png" alt="twtter icon"></a>
+                <a href="#"><img class="soc-link" src="images/inst-icon.png" alt="instagam icon"></a>
+              </div>
+            </div>
+
+            <div class="middle-block">
+              <a href="#" class="footer-main-block__link">About UberEats</a>
+              <a href="#" class="footer-main-block__link">Become a Delivery Partner</a>
+              <a href="#" class="footer-main-block__link">Become a Restaurant Partner</a>
+            </div>
+
+            <div class="right-block">
+              <a href="#" class="footer-main-block__link">See all cities</a>
+              <a href="#" class="footer-main-block__link">Pricing</a>
+              <a href="#" class="footer-main-block__link">Help</a>
+              <a href="#" class="footer-main-block__link">FAQs</a>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="footer__section-download-links">
+          <a class="ios-link" href="#"><img src="images/download-link-ios.png" alt=""></a>
+          <a class="android-link" href="#"><img src="images/download-link-android.png" alt=""></a>
+        </section>
+
+        <section class="footer__section-privacy-terms">
+          <div class="wrapper-footer-section-privacy">
+            <p class="footer-name-company">© 2019 Uber Technologies inc</p>
+            <a href="#" class="section-privacy-link">Privacy</a>
+            <a href="#" class="section-terms-link">Terms</a>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
