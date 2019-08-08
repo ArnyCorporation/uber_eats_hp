@@ -5,8 +5,6 @@
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
 }
 
 a {
@@ -43,9 +41,15 @@ a {
   }
 
   &__input {
+    transition: 1s;
+
+    &:focus {
+      border: 2px solid $c-green;
+    }
 
     &:hover {
       border: 2px solid $c-green;
+      transition: 1s;
     }
 
   }
@@ -72,9 +76,11 @@ a {
     height: 40px;
     margin-right: 16px;
     border-radius: 2px;
+    transition: 1s;
 
     &:hover {
       border: 1px solid $c-green;
+      transition: 1s;
     }
 
   }
@@ -118,9 +124,15 @@ a {
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: 45px;
     font-size: 16px;
+    transition: 1s;
+
+    &:focus {
+      border-bottom: 1px solid black;
+    }
 
     &:hover {
       border-bottom: 1px solid black;
+      transition: 1s;
     }
 
   }
@@ -141,6 +153,7 @@ a {
 
   &:hover {
     background: #ddd2d261;
+    cursor: pointer;
   }
 
   &__price-and-sort {
@@ -186,8 +199,11 @@ a {
     background-position: 8px 10px;
     appearance: none;
     margin-bottom: 30px;
+    font-size: 13px;
+    transition: 1s;
 
     &:hover {
+      transition: 1s;
       color: $c-green;
     }
   }
@@ -215,8 +231,10 @@ a {
     margin-bottom: 20px;
     color: white;
     font-size: 13px;
+    transition: 1s;
 
     &:hover {
+      transition: 1s;
       color: $c-green;
     }
   }
@@ -253,8 +271,10 @@ a {
     color: white;
     margin-left: 20%;
     font-size: 11px;
+    transition: 1s;
 
     &:hover {
+      transition: 1s;
       color: $c-green;
     }
   }
@@ -263,8 +283,10 @@ a {
     color: white;
     margin-left: 31%;
     font-size: 11px;
+    transition: 1s;
 
     &:hover {
+      transition: 1s;
       color: $c-green;
     }
   }
@@ -300,6 +322,16 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .header__input--when {
+      width: 65px;
+    }
+
+    .header__input--to {
+      width: 227px;
+      margin-right: 0;
+    }
+
   }
 
   .header .large-size-inputs {
@@ -316,10 +348,6 @@ a {
       width: 75px;
     }
 
-    &__input--to {
-      width: 170px;
-    }
-
     &__span {
       font-size: 11px;
     }
@@ -327,6 +355,15 @@ a {
   }
 
   .main {
+
+    .card {
+      width: 100%;
+    }
+
+    .card__img {
+      width: 100%;
+    }
+
     .wrapper-cards {
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 16px;
